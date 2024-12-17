@@ -19,7 +19,7 @@ const ViewTask = () => {
 
   const getAllData = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/getalltask'); // Your endpoint
+      const response = await fetch('http://localhost:8002/api/getalltask'); // Your endpoint
       if (!response.ok) {
         throw new Error('Failed to fetch tasks'); // Throw error if response is not OK
       }
