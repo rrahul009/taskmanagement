@@ -16,7 +16,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/getalltask');
+        const response = await fetch('http://localhost:8002/api/getalltask');
         if (!response.ok) {
           throw new Error('Failed to fetch tasks');
         }

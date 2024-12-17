@@ -23,7 +23,7 @@ const CreateTask = () => {
         };
 
         try {
-            const res = await fetch('http://localhost:8000/api/addtask', {
+            const res = await fetch('http://localhost:8002/api/addtask', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',  // Setting content type to JSON

@@ -36,7 +36,7 @@ const ViewTask = () => {
     const confirmDelete = window.confirm('Are you sure you want to delete this task');
     if (confirmDelete) {
       try {
-        const response = await fetch(`http://localhost:8000/api/deletetask/${id}`, {
+        const response = await fetch(`http://localhost:8002/api/deletetask/${id}`, {
           method: 'DELETE',
         });
         if (!response.ok) {
